@@ -52,6 +52,10 @@ document.querySelector("#slider").addEventListener("change", function () {
 	video.volume = this.value / 100;
 });
 
-// document.querySelector("#vintage").addEventListener("click", function () {
-// 	video.className +=
-// })
+document.querySelector("#vintage").addEventListener("click", function () {
+	video.className = "video oldSchool";
+});
+
+document.querySelector("#orig").addEventListener("click", function () {
+	video.className = "video";
+})
