@@ -3,8 +3,8 @@ console.log(video.src);
 
 window.addEventListener("load", function () {
 	video.load();
-	video.setAttribute('autoplay', '');
-	video.setAttribute('loop', '');
+	video.removeAttribute('autoplay');
+	video.removeAttribute('loop');
 });
 
 document.querySelector("#play").addEventListener("click", function () {
