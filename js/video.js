@@ -1,5 +1,6 @@
 var video = document.querySelector("#player1");
 console.log(video.src);
+// yep
 
 window.addEventListener("load", function () {
 	video.load();
