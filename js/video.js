@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
 });
 
 document.querySelector("#play").addEventListener("click", function () {
-	video.volume = document.querySelector("#slider").value / 100;
+	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value + "%";
 	video.play();
 });
 
@@ -47,6 +47,7 @@ document.querySelector("#mute").addEventListener("click", function () {
 
 document.querySelector("#slider").addEventListener("change", function () {
 	video.volume = this.value / 100;
+	document.querySelector("#volume").innerHTML = this.value + "%";
 });
 
 document.querySelector("#vintage").addEventListener("click", function () {
